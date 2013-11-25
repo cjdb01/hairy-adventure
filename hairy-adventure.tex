@@ -45,7 +45,13 @@ This doesn't make the process novel.
 
 The only completely novel proposal identified is the Sunroof server previously mentioned.
 Unfortunately, this section is done little justice, as the content spans for only half a page, including the provided code.
-While the section is short, the idea presented is really innovative and lightweight in contrast to other web frameworks such as {\it HAppS}, {\it Snap}, and {\it Yesod}, and does not require much explanation; even Haskell novices should be able to infer the code necessary to achieve what is being communicated here.
+While the section is short, the idea presented is really innovative and lightweight in contrast to other web frameworks such as {\it HAppS}, {\it Snap}, and {\it Yesod}, and does not require much explanation; even Haskell novices should be able to infer the code necessary to achieve what is being communicated here.\\
+
+The paper presents a technical overview of the topic from too high a level.
+The problem with this is that they do not provide much depth or analysis, and often do not justify why they made such decisions.
+It would be relatively easy to reproduce the calculator discussed in the paper, and given that the authors have specified how many lines of code are necessary to complete the task, it is possible to evaluate their accuracy, provided that the authors have a sample calculator to test against.
+Unfortunately, this does not seem the case, as neither mention of the calculator's specification, nor an external reference to such a specification is made in this paper.
+Additionally, the table provided is not informative, since it does not contrast how many lines of code would be necessary in handwritten JavaScript; although it is possible that the `Percentage' column alludes to this, insufficient information in the column's heading is provided to prove this.
 
 \subsection*{Evaluation of the presented approach}
 Overall, the paper is structured well.
@@ -54,7 +60,8 @@ Their analysis is not quite as deep as some, and this paper certainly does not m
 Additionally, they do not provide any hard evidence to prove that Sunroof is indeed a superior EDSL.
 This is crucial for implementors as they will need to be convinced that Sunroof is worth their time (and possibly money) learning; this may not be achieved, since there are neither code snippet comparisons, nor anything to quantify that the Sunroof server model is superior to other web frameworks in practice.\\
 
-Many of the ideas communicated are brilliant; however, without the above, it is difficult to believe that this paper has a convincing tone. Perhaps if the paper (or a subsequent paper published by Bracker and Gill) was able to meet any one of the above criteria, it would be able to provide more insight into why Sunroof is a desirable EDSL.
+Many of the ideas communicated are brilliant and a sense of closure is almost always apparent; however, without the any of the above, it is difficult to believe that this paper has a convincing tone.
+Perhaps if the paper (or a subsequent paper published by Bracker and Gill) was able to meet any one of the above criteria, it would be able to provide more insight into why Sunroof is a desirable EDSL.
 
 \section*{References}
 \noindent

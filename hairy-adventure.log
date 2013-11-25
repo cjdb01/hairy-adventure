@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.28)  25 NOV 2013 20:01
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.28)  25 NOV 2013 21:16
 entering extended mode
 **C:/Users/Christopher/Documents/GitHub/hairy-adventure/hairy-adventure.tex
 (C:/Users/Christopher/Documents/GitHub/hairy-adventure/hairy-adventure.tex
@@ -90,31 +90,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--45
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
+Underfull \hbox (badness 10000) in paragraph at lines 57--62
 
  []
 
-[2] [3] [4
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+ []
+
+[3] [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
 
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 82--85
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
 
-Overfull \hbox (19.08406pt too wide) in paragraph at lines 86--88
+Overfull \hbox (19.08406pt too wide) in paragraph at lines 93--95
 \OT1/cmr/m/n/10 By sub-mit-ting this re-port for as-sess-ment as the exam com-p
 o-nent of COMP4181/9181
  []
@@ -142,7 +147,7 @@ iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on hairy-adventure.pdf (7 pages, 148419 bytes).
+Output written on hairy-adventure.pdf (7 pages, 149324 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
