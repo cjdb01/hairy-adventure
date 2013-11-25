@@ -75,21 +75,38 @@ Perhaps if the paper (or a subsequent paper published by Bracker and Gill) was a
 \subsection*{Problem that the paper tries to address}
 {\it Mio: A High-Performance Multicore IO Manager for GHC}, written by Andreas Voellmy, Junchang Wangm, Paul Hudak, and Kazuhiko Yamamoto, addresses a very real concurrency problem.
 They argue that Haskell threads are key to high-performance, concurrent programs.
-They suggest that naive implementations are likely to use native threads, which involve expensive context switching.
-Haskell threads are lightweight, and do not require the operating system to perform any expensive context switching.
-The authors state that Haskell threads are likely to promote simple threaded models, and discourage event-driven programming.
-They convincingly present the idea that event-driven programs are logically complex, and that network server logic is better understood as a single execution thread.\\
-
 Although GHC provides support for Haskell threads, its runtime system doesn't natively scale well on multicore processors, and so network applications that try to take advantage of lightweight Haskell threads will perform poorly.
 The problems that this paper address are:
 
 \begin{itemize}
 \item Identifying why GHC's RTS performance doesn't natively scale on multicore processors.
-\item 
+\item Implementing a way for the RTS to scale on multicore processors.
 \end{itemize}
 
+\noindent
+The authors motivate this problem very well, and explain in great detail the reasons why this problem is one of great concern in the opening paragraphs.
+While reading the introduction, it is difficult not to consider it to be an extension of the abstract, since the introduction goes beyond its definition and summarises the remainder of the paper.\\
+
 \subsection*{Coverage of related work}
+Many of this paper's references are not related to similar works.
+Works that are related are each discussed very briefly; each receives a few sentences outlining what their work achieves.
+One such example is, `{\it The Go programming language [4] provides sophisticated coroutines, called goroutines...}', which does the related work just enough justice to encourage a motivated reader to consider the reference.\\
+
+Related works discussed toward the end of the related work section are given more time.
+This is important, as these works require a further expansion to see how closely they are related, and also to show how they differ.
+They are not just references to other programming languages that implement similar features; they are implementations in arbitrary languages.\\
+
+Overall, Vollemy et al. discuss related work quite well, and do justify their differences. Any similarities between {\it Mio} and related work is not discussed.
+
 \subsection*{Originality and technical soundness of the underlying ideas}
+This paper presents an original idea and is also extremely technical.
+The paper begins by ensuring that readers are familiar with the GHC threaded runtime system, and how it interacts with the operating system.
+By not assuming that the reader has previous knowledge in the field, the authors are able to achieve a greater level of depth when discussing their implementation of {\it Mio}, since the authors know the minimum level of all readers.\\
+
+The paper contains lots of Haskell source code that is used to justify their arguments.
+Where code is not provided in the report, links are provided to servers that have the code online.
+
+
 \subsection*{Evaluation of the presented approach}
 
 \noindent
