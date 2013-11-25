@@ -124,7 +124,28 @@ This analysis in particular is accompanied by three charts:
 This is incredibly useful, as it shows the problem close up, but then moves out to show the bigger problem; this illustrates that the problem.\\
 
 Each problem is then resolved directly after the problem has been identified.
-Continuing with our {\it Concurrent Callback Tables} example, 
+Continuing with our {\it Concurrent Callback Tables} example, the problem is solved as discussed in the first part of this paper; the results are provided in the original throughput chart (this is one evolution), and another chart that shows multiple epochs.
+There is no need for a single epoch chart, as the situation that required illustration via the single epoch chart is no longer present, and it is much easier to observe thread activity from a distance.
+This problem-resolution pattern is continued for each problem introduced, showing consistency in their analysis.\\
+
+\noindent
+Following the analysis on performance, the authors discuss the implementation of {\it Mio}.
+This section receives less coverage than the previous one, but still provides a lot of detailed information.
+Although it provides an excusable reason why {\it Mio} couldn't be implemented in GHC for Windows, several `complications' are made note of as `complications', but not documented.
+Anyone not familiar with Windows' internals may not receive full closure in this section.\\
+
+\noindent
+Vollemy et al. use scientific methods to help prove that program integrity.
+Section 5 discusses operating system bottlenecks and bugs; to be certain that the implementation wasn't the source of the bottleneck, they implemented a C equivalent of \verb/SimpleServer/ as a control\footnote{Called \texttt{SimpleServerC}.}.
+Since both the programs are subject to the same problem (and the two programs are expressed very differently), this eliminates the possibility that the Haskell implementation is at fault.
+Again, once problems are identified, they are plotted on a throughput chart, where each problem resolution is an evolution.
+The reader may find it interesting to note that because it was used as a control, \verb/SimpleServerC/ also helped to identify a concurrency bug in the Linux kernel.\\
+
+\noindent
+Most of the previously discussed methods above are again present in the evaluation of {\it Mio}.
+In this section, the throughput charts do not represent evolution of a single system, but rather the performance of many systems.
+{\it Mio}'s results are impressive, and are discussed well.
+
 
 \subsection*{Evaluation of the presented approach}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.28)  26 NOV 2013 05:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.28)  26 NOV 2013 06:21
 entering extended mode
 **C:/Users/Christopher/Documents/GitHub/hairy-adventure/hairy-adventure.tex
 (C:/Users/Christopher/Documents/GitHub/hairy-adventure/hairy-adventure.tex
@@ -136,34 +136,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
- []
-
-[6
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 140--143
+Underfull \hbox (badness 10000) in paragraph at lines 126--130
 
  []
 
 
-Overfull \hbox (19.08406pt too wide) in paragraph at lines 144--146
-\OT1/cmr/m/n/10 By sub-mit-ting this re-port for as-sess-ment as the exam com-p
-o-nent of COMP4181/9181
+Underfull \hbox (badness 10000) in paragraph at lines 131--136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--143
+
+ []
+
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
+
  []
 
 [7
 
+]
+Underfull \hbox (badness 10000) in paragraph at lines 161--164
+
+ []
+
+
+Overfull \hbox (19.08406pt too wide) in paragraph at lines 165--167
+\OT1/cmr/m/n/10 By sub-mit-ting this re-port for as-sess-ment as the exam com-p
+o-nent of COMP4181/9181
+ []
+
+[8
+
 ] (C:\Users\Christopher\Documents\GitHub\hairy-adventure\hairy-adventure.aux) )
  
 Here is how much of TeX's memory you used:
- 273 strings out of 493921
- 3448 string characters out of 3144857
- 54031 words of memory out of 3000000
- 3636 multiletter control sequences out of 15000+200000
- 8409 words of font info for 30 fonts, out of 3000000 for 9000
+ 275 strings out of 493921
+ 3467 string characters out of 3144857
+ 55031 words of memory out of 3000000
+ 3637 multiletter control sequences out of 15000+200000
+ 8577 words of font info for 31 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  24i,8n,19p,659b,207s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
@@ -176,10 +191,11 @@ iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on hairy-adventure.pdf (8 pages, 156742 bytes).
+X 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on hairy-adventure.pdf (9 pages, 164310 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
