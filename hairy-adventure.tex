@@ -1,4 +1,4 @@
-\documentclass[9pt]{article}
+\documentclass[9pt, twocolumn]{article}
 \title{Exam report for COMP4181/9181 (13s2)}
 \author{z3416506}
 \date{}
@@ -12,15 +12,27 @@ Jan Bracker and Andy Gill's technical paper, {\it Sunroof: A Monadic DSL to Gene
 They discuss the usefulness of JavaScript (e.g. graphical canvases, event handling, and first-class functions), but also note that it lacks some desirable features, such as Haskell's static typing.\\
 
 Bracker and Gill propose Sunroof as an alternative to JavaScript, since Sunroof is able to introduce many of Haskell's features to programmers that JavaScript is unable to natively facilitate (e.g. a threading model, a static type checker, etc.).
-As expected, Sunroof has a foreign-function interface, which allows the extension of Sunroof's interface possible.\\
+Since Haskell has an extremely powerful type system, JavaScript programs that are generated through Sunroof are more likely to be correct than if the JavaScript was handwritten.\\
 
-Bracker and Gill implement Sunroof through a monad similar to the \verb/IO/ monad found in Haskell, but uses an extra argument to determine which threading model is to be used.
+Sunroof is implemented through a monad similar to the \verb/IO/ monad found in Haskell, but uses an extra argument to determine which threading model is to be used.
+Unlike native, handwirtten JavaScript, Sunroof is able to provide concurrent JavaScript, since it is embedded in Haskell.
+This is an important step up from handwritten JavaScript, since parallel computations are increasingly becoming important.
 
 \subsection*{Coverage of related work}
+The authors claim that their work differs from previous research since the previously published papers do not attempt to directly bridge Haskell and JavaScript.
+Of the thirty references to other works made in this paper, seventeen of these references are explicitly considered to be related in some way to Sunroof.
+The authors note the similarities of related work, but do not go into great detail about any of them.
+This is not necessarily bad; there are too many to go into great detail of each, and their level of definition is more than enough to encourage interested readers (with sufficient time) to investigate the related works.\\
+
+The remaining works do not appear to be directly related to research associated with Sunroof; they are more related to Haskell features used to implement Sunroof.
+Consider `{\it Our example type \verb/JSString/ has a \verb/Monoid/ and an \verb/IsString/ instance that are not provided for other wrappers, e.g. \verb/JSBool/ or \verb/JSNumber/. This approach was first introduced by Svenningsson [29].}'
+Svenningson and Axelsson had done previous research regarding shallow and deep embedding in reference 29, and Bracker and Gill were able to capitalise on this. They provided reference to a highly detailed technical paper written by Svenningsson and Axelsson regarding the topic\footnote{The marker should be aware that the author of this critical analysis didn't have time to properly read this paper, but did read through enough of it to get the gist of what Bracker and Gill were alluding to.}, which encourages further research should the reader wish to learn more about Sunroof's implementation.
+
 \subsection*{Originality and technical soundness of the underlying ideas}
+The idea of generating JavaScript through Haskell is not original.
+Bracker and Gill are quick to point out that a direct connection between Haskell and JavaScript is novel; this is true, however, as mentioned in their related work section, {\it Fay} compiles subsets of Haskell, and {\it }
+
 \subsection*{Evaluation of the presented approach}
-\section*{References}
-This section is concerned with other research papers that have been alluded to in the critical analysis of Paper 1.\\
 
 \noindent
 {\bf End of critical assessment of Paper 1.}
@@ -30,8 +42,6 @@ This section is concerned with other research papers that have been alluded to i
 \subsection*{Coverage of related work}
 \subsection*{Originality and technical soundness of the underlying ideas}
 \subsection*{Evaluation of the presented approach}
-\section*{References}
-This section is concerned with other research papers that have been alluded to in the critical analysis of Paper 2.\\
 
 \noindent
 {\bf End of critical assessment of Paper 2.}

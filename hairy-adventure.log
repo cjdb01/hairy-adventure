@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.28)  25 NOV 2013 13:05
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.28)  25 NOV 2013 15:53
 entering extended mode
 **C:/Users/Christopher/Documents/GitHub/hairy-adventure/hairy-adventure.tex
 (C:/Users/Christopher/Documents/GitHub/hairy-adventure/hairy-adventure.tex
@@ -54,11 +54,23 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 6.
 
-[1
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+
+]
+Underfull \hbox (badness 3039) in paragraph at lines 11--13
+\OT1/cmr/m/n/10 Jan Bracker and Andy Gill's tech-ni-cal pa-per,
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 14--16
+\OT1/cmr/m/n/10 JavaScript pro-grams that are gen-er-ated through
  []
 
 
@@ -67,59 +79,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--16
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 1092) in paragraph at lines 22--26
+\OT1/cmr/m/n/10 The au-thors claim that their work dif-fers from
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 22--26
+\OT1/cmr/m/n/10 pre-vi-ous re-search since the pre-vi-ously pub-lished
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--26
 
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 29.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 29.
 [2
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+] [3
 
- []
-
-[3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
 [4
 
+
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 45--48
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
- []
-
-
-Overfull \hbox (19.08406pt too wide) in paragraph at lines 49--51
-\OT1/cmr/m/n/10 By sub-mit-ting this re-port for as-sess-ment as the exam com-p
-o-nent of COMP4181/9181
  []
 
 [5
 
+
 ] (C:\Users\Christopher\Documents\GitHub\hairy-adventure\hairy-adventure.aux) )
  
 Here is how much of TeX's memory you used:
- 236 strings out of 493921
- 2931 string characters out of 3144857
- 51031 words of memory out of 3000000
- 3602 multiletter control sequences out of 15000+200000
+ 238 strings out of 493921
+ 2959 string characters out of 3144857
+ 55031 words of memory out of 3000000
+ 3604 multiletter control sequences out of 15000+200000
  8409 words of font info for 30 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 23i,6n,17p,323b,187s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 24i,8n,19p,691b,207s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on hairy-adventure.pdf (5 pages, 95495 bytes).
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on hairy-adventure.pdf (5 pages, 134242 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
