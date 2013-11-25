@@ -1,4 +1,4 @@
-\documentclass[9pt, twocolumn]{article}
+\documentclass[9pt]{report}
 \title{Exam report for COMP4181/9181 (13s2)}
 \author{z3416506}
 \date{}
@@ -19,7 +19,15 @@ Unlike native, handwirtten JavaScript, Sunroof is able to provide concurrent Jav
 This is an important step up from handwritten JavaScript, since parallel computations are increasingly becoming important.
 
 \subsection*{Coverage of related work}
-The authors claim that their work differs from previous research since the previously published papers do not attempt to directly bridge Haskell and JavaScript.
+The authors claim that their work differs from previous research since the previously published papers because:
+
+\begin{itemize}
+\item Other works do not attempt to create a direct connection between Haskell and JavaScript continuations,
+\item The Sunroof server provides support for communication with websites requesting code snippets via the {\it Kansas comet push mechanism}, and,
+\item Sunroof is the only EDSL to support JavaScript generation inside type-safe Haskell.
+\end{itemize}
+
+\noindent
 Of the thirty references to other works made in this paper, seventeen of these references are explicitly considered to be related in some way to Sunroof.
 The authors note the similarities of related work, but do not go into great detail about any of them.
 This is not necessarily bad; there are too many to go into great detail of each, and their level of definition is more than enough to encourage interested readers (with sufficient time) to investigate the related works.\\
@@ -30,26 +38,29 @@ Svenningson and Axelsson had done previous research regarding shallow and deep e
 
 \subsection*{Originality and technical soundness of the underlying ideas}
 The idea of generating JavaScript through Haskell is not original, as it is mentioned in the Related Work section that {\it Fay} compiles subsets of Haskell to JavaScript.
-Bracker and Gill are quick to point out that a direct connection between Haskell and JavaScript is most likely novel.
-Furthermore, it is their belief that Sunroof is the only EDSL that generates JavaScript inside Haskell that is type-safe.
-No evidence has been presented to suggest otherwise at the time of writing this analysis.\\
-
+Bracker and Gill point out that that Sunroof is the only EDSL that generates JavaScript inside Haskell that is type-safe.
+No evidence has been presented to suggest otherwise at the time of writing this analysis.
 This doesn't make the process novel.
-{\it Accelerate} generates {\it CUDA} in a similar manner[1], and thus it is important for this paper to be augmented with some sort of technical background.
-This is somewhat lacking, since a Sunroof codebase isn't supplied; only a series of code snippets have been made available in the paper itself.\\
+{\it Accelerate} generates {\it CUDA} in a similar manner[1].\\
 
-There are two completely original aspects to this paper\footnote{To the author of this critical analysis' knowledge.}:
-\begin{itemize}
-\item Sunroof implements threading models for JavaScript, and,
-\item The Sunroof server `{\it provides the infrastructure to communicate with the currently calling website through the Kansas cornet [16] push mechanism [20].}'
-\end{itemize}
+The only completely novel proposal identified is the Sunroof server previously mentioned.
+Unfortunately, this section is done little justice, as the content spans for only half a page, including the provided code.
+While the section is short, the idea presented is really innovative and lightweight in contrast to other web frameworks such as {\it HAppS}, {\it Snap}, and {\it Yesod}, and does not require much explanation; even Haskell novices should be able to infer the code necessary to achieve what is being communicated here.
 
 \subsection*{Evaluation of the presented approach}
+Overall, the paper is structured well.
+However, there are a few key things to take note of.
+Their analysis is not quite as deep as some, and this paper certainly does not make any attempt to motivate using Sunroof over other EDSLs until the very end.
+Additionally, they do not provide any hard evidence to prove that Sunroof is indeed a superior EDSL.
+This is crucial for implementors as they will need to be convinced that Sunroof is worth their time (and possibly money) learning; this may not be achieved, since there are neither code snippet comparisons, nor anything to quantify that the Sunroof server model is superior to other web frameworks in practice.\\
+
+Many of the ideas communicated are brilliant; however, without the above, it is difficult to believe that this paper has a convincing tone. Perhaps if the paper (or a subsequent paper published by Bracker and Gill) was able to meet any one of the above criteria, it would be able to provide more insight into why Sunroof is a desirable EDSL.
 
 \section*{References}
 \noindent
-1.\hspace{5mm}AccelerateHS, https://github.com/AccelerateHS/accelerate
+1.\hspace{5mm}AccelerateHS, https://github.com/AccelerateHS/accelerate\\
 
+\vspace{25mm}
 \noindent
 {\bf End of critical assessment of Paper 1.}
 \clearpage

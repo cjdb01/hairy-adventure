@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.28)  25 NOV 2013 17:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.28)  25 NOV 2013 20:01
 entering extended mode
 **C:/Users/Christopher/Documents/GitHub/hairy-adventure/hairy-adventure.tex
 (C:/Users/Christopher/Documents/GitHub/hairy-adventure/hairy-adventure.tex
@@ -13,19 +13,20 @@ german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -54,23 +55,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 6.
 
-[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+[1
 
-
-
-]
-Underfull \hbox (badness 3039) in paragraph at lines 11--13
-\OT1/cmr/m/n/10 Jan Bracker and Andy Gill's tech-ni-cal pa-per,
- []
-
-
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
- []
-
-
-Underfull \hbox (badness 1009) in paragraph at lines 14--16
-\OT1/cmr/m/n/10 JavaScript pro-grams that are gen-er-ated through
  []
 
 
@@ -78,96 +67,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
 
-
-Underfull \hbox (badness 1092) in paragraph at lines 22--26
-\OT1/cmr/m/n/10 The au-thors claim that their work dif-fers from
- []
-
-
-Underfull \hbox (badness 1308) in paragraph at lines 22--26
-\OT1/cmr/m/n/10 pre-vi-ous re-search since the pre-vi-ously pub-lished
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--26
-
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 29.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 29.
-
-Underfull \hbox (badness 2126) in paragraph at lines 32--36
-\OT1/cmr/m/n/10 JavaScript is most likely novel. Fur-ther-more,
- []
-
-
-Underfull \hbox (badness 6380) in paragraph at lines 32--36
-\OT1/cmr/m/n/10 that gen-er-ates JavaScript in-side Haskell that
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--36
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--40
-
- []
-
-[2
-
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
 
-Underfull \hbox (badness 7777) in paragraph at lines 43--44
-[]\OT1/cmr/m/n/10 Sunroof im-ple-ments thread-ing mod-els for
- []
-
-
-Overfull \hbox (50.97684pt too wide) in paragraph at lines 50--52
-\OT1/cmr/m/n/10 1. Ac-cel-er-ateHS, https://github.com/AccelerateHS/accelerate 
+Underfull \hbox (badness 10000) in paragraph at lines 30--34
 
  []
 
-[3
-
-] [4
-
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 37.
+[1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+Underfull \hbox (badness 10000) in paragraph at lines 40--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
+
+ []
+
+[2] [3] [4
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
 [5
 
-
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 
+ []
+
+
+Overfull \hbox (19.08406pt too wide) in paragraph at lines 86--88
+\OT1/cmr/m/n/10 By sub-mit-ting this re-port for as-sess-ment as the exam com-p
+o-nent of COMP4181/9181
  []
 
 [6
 
-
 ] (C:\Users\Christopher\Documents\GitHub\hairy-adventure\hairy-adventure.aux) )
  
 Here is how much of TeX's memory you used:
- 255 strings out of 493921
- 3259 string characters out of 3144857
- 56031 words of memory out of 3000000
- 3618 multiletter control sequences out of 15000+200000
+ 273 strings out of 493921
+ 3448 string characters out of 3144857
+ 54031 words of memory out of 3000000
+ 3636 multiletter control sequences out of 15000+200000
  8409 words of font info for 30 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 24i,8n,19p,659b,207s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 24i,8n,19p,659b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
@@ -179,9 +142,9 @@ iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on hairy-adventure.pdf (6 pages, 146857 bytes).
+Output written on hairy-adventure.pdf (7 pages, 148419 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
