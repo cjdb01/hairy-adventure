@@ -41,15 +41,20 @@ The idea of generating JavaScript through Haskell is not original, as it is ment
 Bracker and Gill point out that that Sunroof is the only EDSL that generates JavaScript inside Haskell that is type-safe.
 No evidence has been presented to suggest otherwise at the time of writing this analysis.
 This doesn't make the process novel.
-{\it Accelerate} generates {\it CUDA} in a similar manner[1].\\
+{\it Accelerate} generates {\it CUDA} in a similar manner[1].
+Sadly, there is little discussion on how Sunroof goes about this, making it difficult to contrast implementation methods.\\
 
+\noindent
 The only completely novel proposal identified is the Sunroof server previously mentioned.
-Unfortunately, this section is done little justice, as the content spans for only half a page, including the provided code.
-While the section is short, the idea presented is really innovative and lightweight in contrast to other web frameworks such as {\it HAppS}, {\it Snap}, and {\it Yesod}, and does not require much explanation; even Haskell novices should be able to infer the code necessary to achieve what is being communicated here.\\
+While the section is short, the idea presented is really innovative and lightweight in contrast to other web frameworks such as {\it HAppS}, {\it Snap}, and {\it Yesod}, and does not require much explanation; even Haskell novices should be able to infer the code necessary to achieve what is being communicated here.
+However, there is no analysis of the server's performance, and the paper does not discuss why Sunroof server is a good alternative to the above three servers.
+Later sections only mention the originality of the idea; there is no mention of its use in a practical situation.\\
 
+\noindent
 The paper presents a technical overview of the topic from too high a level.
 The problem with this is that they do not provide much depth or analysis, and often do not justify why they made such decisions.
-It would be relatively easy to reproduce the calculator discussed in the paper, and given that the authors have specified how many lines of code are necessary to complete the task, it is possible to evaluate their accuracy, provided that the authors have a sample calculator to test against.
+It would be relatively easy to reproduce the calculator discussed in the paper.
+Given that the authors have specified how many lines of code are necessary to complete the task, it is possible to evaluate whether the reproduced calculator is close to the original, provided that the authors have a sample calculator to test against.
 Unfortunately, this does not seem the case, as neither mention of the calculator's specification, nor an external reference to such a specification is made in this paper.
 Additionally, the table provided is not informative, since it does not contrast how many lines of code would be necessary in handwritten JavaScript; although it is possible that the `Percentage' column alludes to this, insufficient information in the column's heading is provided to prove this.
 
@@ -87,22 +92,36 @@ The problems that this paper address are:
 The authors motivate this problem very well, and explain in great detail the reasons why this problem is one of great concern in the opening paragraphs.
 While reading the introduction, it is difficult not to consider it to be an extension of the abstract, since the introduction goes beyond its definition and summarises the remainder of the paper.\\
 
+\noindent
+The paper identifies three major problems with the current system:
+
+\begin{itemize}
+\item The GHC IO manager uses a single MVar to manage the callback table.
+\item Callback tables are insufficient for scaling beyond 4 cores.
+\item Performance when using more than 8 cores scales poorly.
+\end{itemize}
+
+The problems are not presented together at the start, but sequentially, as the preceding problem is solved; it is almost like the system is evolving.
+The authors take great care to resolve all three problems, ensuring that there is complete closure for each.
+
 \subsection*{Coverage of related work}
 Many of this paper's references are not related to similar works.
 Works that are related are each discussed very briefly; each receives a few sentences outlining what their work achieves.
-One such example is, `{\it The Go programming language [4] provides sophisticated coroutines, called goroutines...}', which does the related work just enough justice to encourage a motivated reader to consider the reference.\\
+One such example is, `{\it The Go programming language [4] provides sophisticated coroutines, called goroutines...}', which does the related work just enough justice to encourage a motivated reader to consider reading the reference.\\
 
 \noindent
 Related works discussed toward the end of the related work section are given more time.
 This is important, as these works require a further expansion to see how closely they are related, and also to show how they differ.
 They are not just references to other programming languages that implement similar features; they are implementations in arbitrary languages.\\
 
-Overall, Vollemy et al. discuss related work quite well, and do justify their differences. Any similarities between {\it Mio} and related work is not discussed.
+\noindent
+As this paper presents a distinctive solution to the Haskell thread issue, it is expected that there would be no previous work to be expanded on.
+Overall, Vollemy et al. discuss related work quite well, and do justify their differences.
 
 \subsection*{Originality and technical soundness of the underlying ideas}
 This paper presents an original idea and is also extremely technical.
 The paper begins by ensuring that readers are familiar with the GHC threaded runtime system, and how it interacts with the operating system.
-By not assuming that the reader has previous knowledge in the field, the authors are able to achieve a greater level of depth when discussing their implementation of {\it Mio}, since the authors know the minimum level of all readers.\\
+By not assuming that the reader has previous knowledge in the field, the authors are able to achieve a greater level of depth when discussing their analysis of the current system and implementation of {\it Mio}, since the authors know the minimum level of all readers.\\
 
 \noindent
 The paper contains lots of Haskell source code that is used to justify their arguments.
@@ -113,23 +132,24 @@ Correct Haskell programs are even more difficult to dispute, as they are general
 
 \noindent
 Much of this paper's depth comes from the authors' empirical analysis of systems studied.
-For example, in {\it Problem that the paper tries to address}, we learned that the authors discover that one serious bottleneck is due to the somewhat cyclic activity of workers interfering with each other.
+For example, in {\it Problem that the paper tries to address}, we learned that the authors discover that one serious bottleneck is due to concurrent callback tables.
 This analysis in particular is accompanied by three charts:
 \begin{itemize}
 \item one plotting the throughput of the \verb/SimpleServer/ as it currently is, and as it evolves over time;
-\item one describing a single epoch of activity\footnote{An epoch is a single time step}; and,
+\item one describing a single epoch of activity\footnote{An epoch is a one step.}; and,
 \item one showing several epochs
 \end{itemize}
 
 This is incredibly useful, as it shows the problem close up, but then moves out to show the bigger problem; this illustrates that the problem.\\
 
 Each problem is then resolved directly after the problem has been identified.
-Continuing with our {\it Concurrent Callback Tables} example, the problem is solved as discussed in the first part of this paper; the results are provided in the original throughput chart (this is one evolution), and another chart that shows multiple epochs.
+Continuing with our concurrent callback tables example, the problem is solved as discussed in the first part of this analysis; the results are provided in the original throughput chart (this is one evolution), and another chart that shows multiple epochs.
 There is no need for a single epoch chart, as the situation that required illustration via the single epoch chart is no longer present, and it is much easier to observe thread activity from a distance.
 This problem-resolution pattern is continued for each problem introduced, showing consistency in their analysis.\\
 
 \noindent
 Following the analysis on performance, the authors discuss the implementation of {\it Mio}.
+We learn here that the paper is quite original, since {\it Mio} is implemented in GHC 7.8.1
 This section receives less coverage than the previous one, but still provides a lot of detailed information.
 Although it provides an excusable reason why {\it Mio} couldn't be implemented in GHC for Windows, several `complications' are made note of as `complications', but not documented.
 Anyone not familiar with Windows' internals may not receive full closure in this section.\\
@@ -144,10 +164,14 @@ The reader may find it interesting to note that because it was used as a control
 \noindent
 Most of the previously discussed methods above are again present in the evaluation of {\it Mio}.
 In this section, the throughput charts do not represent evolution of a single system, but rather the performance of many systems.
-{\it Mio}'s results are impressive, and are discussed well.
-
+{\it Mio}'s results are impressive, topping the charts, and are discussed in great detail.
+The discussion then looks at other implementations and contrasts their performances when written in different programming languages.
 
 \subsection*{Evaluation of the presented approach}
+This is an extremely sound, technical paper, which tackles the problem with a well-formed scientific approach.
+Their results are presented well and are well discussed; it would be relatively easy to reproduce these results, as everything relevant has been documented in this paper.
+Complete closure is a common theme in this paper, and is present in all but one identified case.
+The authors have made an excellent contribution to the Haskell community.
 
 \noindent
 {\bf End of critical assessment of Paper 2.}
