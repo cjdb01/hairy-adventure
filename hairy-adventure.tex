@@ -92,6 +92,7 @@ Many of this paper's references are not related to similar works.
 Works that are related are each discussed very briefly; each receives a few sentences outlining what their work achieves.
 One such example is, `{\it The Go programming language [4] provides sophisticated coroutines, called goroutines...}', which does the related work just enough justice to encourage a motivated reader to consider the reference.\\
 
+\noindent
 Related works discussed toward the end of the related work section are given more time.
 This is important, as these works require a further expansion to see how closely they are related, and also to show how they differ.
 They are not just references to other programming languages that implement similar features; they are implementations in arbitrary languages.\\
@@ -103,9 +104,27 @@ This paper presents an original idea and is also extremely technical.
 The paper begins by ensuring that readers are familiar with the GHC threaded runtime system, and how it interacts with the operating system.
 By not assuming that the reader has previous knowledge in the field, the authors are able to achieve a greater level of depth when discussing their implementation of {\it Mio}, since the authors know the minimum level of all readers.\\
 
+\noindent
 The paper contains lots of Haskell source code that is used to justify their arguments.
-Where code is not provided in the report, links are provided to servers that have the code online.
+Where code is not provided in the report, links are provided to code hosted online.
+The latter is extremely useful, as it allows for further analytical study without taking additional space in the paper.
+Assuming what is provided is correct, using source code to justify arguments in general is useful, since it proves them in a very concise manner.
+Correct Haskell programs are even more difficult to dispute, as they are generally contain pure code; it is a lot easier to dispute an imperative program without a rigorous proof than a functional program.\\
 
+\noindent
+Much of this paper's depth comes from the authors' empirical analysis of systems studied.
+For example, in {\it Problem that the paper tries to address}, we learned that the authors discover that one serious bottleneck is due to the somewhat cyclic activity of workers interfering with each other.
+This analysis in particular is accompanied by three charts:
+\begin{itemize}
+\item one plotting the throughput of the \verb/SimpleServer/ as it currently is, and as it evolves over time;
+\item one describing a single epoch of activity\footnote{An epoch is a single time step}; and,
+\item one showing several epochs
+\end{itemize}
+
+This is incredibly useful, as it shows the problem close up, but then moves out to show the bigger problem; this illustrates that the problem.\\
+
+Each problem is then resolved directly after the problem has been identified.
+Continuing with our {\it Concurrent Callback Tables} example, 
 
 \subsection*{Evaluation of the presented approach}
 
