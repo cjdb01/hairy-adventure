@@ -30,7 +30,7 @@ The authors claim that their work differs from previous research since the previ
 \noindent
 Of the thirty references to other works made in this paper, seventeen of these references are explicitly considered to be related in some way to Sunroof.
 The authors note the similarities of related work, but do not go into great detail about any of them.
-This is not necessarily bad; there are too many to go into great detail of each, and their level of definition is more than enough to encourage interested readers (with sufficient time) to investigate the related works.\\
+This is not necessarily bad; there are too many to go into extensive detail of each, and their level of definition is more than enough to encourage interested readers (with sufficient time) to investigate the related works.\\
 
 The remaining works do not appear to be directly related to research associated with Sunroof; they are more related to Haskell features used to implement Sunroof.
 Consider `{\it Our example type \verb/JSString/ has a \verb/Monoid/ and an \verb/IsString/ instance that are not provided for other wrappers, e.g. \verb/JSBool/ or \verb/JSNumber/. This approach was first introduced by Svenningsson [29].}'
@@ -40,8 +40,7 @@ Svenningson and Axelsson had done previous research regarding shallow and deep e
 The idea of generating JavaScript through Haskell is not original, as it is mentioned in the Related Work section that {\it Fay} compiles subsets of Haskell to JavaScript.
 Bracker and Gill point out that that Sunroof is the only EDSL that generates JavaScript inside Haskell that is type-safe.
 No evidence has been presented to suggest otherwise at the time of writing this analysis.
-This doesn't make the process novel.
-{\it Accelerate} generates {\it CUDA} in a similar manner[1].
+This doesn't make the process novel; {\it Accelerate} generates {\it CUDA} in a similar manner[1].
 Sadly, there is little discussion on how Sunroof goes about this, making it difficult to contrast implementation methods.\\
 
 \noindent
@@ -53,6 +52,7 @@ Later sections only mention the originality of the idea; there is no mention of 
 \noindent
 The paper presents a technical overview of the topic from too high a level.
 The problem with this is that they do not provide much depth or analysis, and often do not justify why they made such decisions.
+The code provided is sparse and incomplete, and no references are given to a more complete codebase (e.g. a GitHub repository).
 It would be relatively easy to reproduce the calculator discussed in the paper.
 Given that the authors have specified how many lines of code are necessary to complete the task, it is possible to evaluate whether the reproduced calculator is close to the original, provided that the authors have a sample calculator to test against.
 Unfortunately, this does not seem the case, as neither mention of the calculator's specification, nor an external reference to such a specification is made in this paper.
@@ -65,7 +65,7 @@ Their analysis is not quite as deep as some, and this paper certainly does not m
 Additionally, they do not provide any hard evidence to prove that Sunroof is indeed a superior EDSL.
 This is crucial for implementors as they will need to be convinced that Sunroof is worth their time (and possibly money) learning; this may not be achieved, since there are neither code snippet comparisons, nor anything to quantify that the Sunroof server model is superior to other web frameworks in practice.\\
 
-Many of the ideas communicated are brilliant and a sense of closure is almost always apparent; however, without the any of the above, it is difficult to believe that this paper has a convincing tone.
+Many of the ideas communicated are brilliant; however, without the any of the above, this paper's tone is not a convincing one, and a sense of closure is not achieved.
 Perhaps if the paper (or a subsequent paper published by Bracker and Gill) was able to meet any one of the above criteria, it would be able to provide more insight into why Sunroof is a desirable EDSL.
 
 \section*{References}
@@ -107,7 +107,8 @@ The paper identifies three fundamental problems with the current system and reso
 \end{itemize}
 
 The problems are not presented together at the start, but sequentially, as the preceding problem is solved; it is almost like the system is evolving.
-The authors take great care to resolve all three problems, ensuring that there is complete closure for each.\\
+The authors take great care to resolve all three problems, ensuring that there is complete closure for each.
+Further bottlenecks in the operating system were identified and rectified also.
 
 \subsection*{Coverage of related work}
 Many of this paper's references are not related to similar works.
@@ -141,7 +142,7 @@ For example, in {\it Problem that the paper tries to address}, we learned that t
 This analysis in particular is accompanied by three charts:
 \begin{itemize}
 \item one plotting the throughput of the \verb/SimpleServer/ as it currently is, and as it evolves over time;
-\item one describing a single epoch of activity\footnote{An epoch is a one cycle in a series of events.}; and,
+\item one describing a single epoch of activity\footnote{An epoch is one cycle in a series of events.}; and,
 \item one showing several epochs
 \end{itemize}
 
@@ -173,8 +174,8 @@ In this section, the throughput charts do not represent evolution of a single sy
 The discussion then looks at other implementations and contrasts their performances when written in different programming languages.
 
 \subsection*{Evaluation of the presented approach}
-This is an extremely sound, technical paper, which tackles the problem with a well-formed scientific approach.
-Their results are presented well and are well discussed; it would be relatively easy to reproduce these results, as everything relevant has been documented in this paper.
+This is an extremely sound, technical paper, which tackles the problem with a well-formed and consistent scientific approach.
+The results are presented well and are well discussed; it would be relatively easy to reproduce these results, as everything relevant has been documented in this paper.
 Complete closure is a common theme in this paper, and is present in all but one identified case.
 The authors have made an excellent contribution to the Haskell community.
 

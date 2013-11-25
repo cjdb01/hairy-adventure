@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.28)  26 NOV 2013 08:31
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.28)  26 NOV 2013 08:58
 entering extended mode
 **C:/Users/Christopher/Documents/GitHub/hairy-adventure/hairy-adventure.tex
 (C:/Users/Christopher/Documents/GitHub/hairy-adventure/hairy-adventure.tex
@@ -85,21 +85,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 40--46
+Underfull \hbox (badness 10000) in paragraph at lines 40--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--67
+Underfull \hbox (badness 10000) in paragraph at lines 46--51
 
  []
 
 [2]
+Underfull \hbox (badness 10000) in paragraph at lines 62--67
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
@@ -110,66 +110,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--91
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--111
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--116
+Underfull \hbox (badness 10000) in paragraph at lines 114--117
 
  []
 
 [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 117--121
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--130
+Underfull \hbox (badness 10000) in paragraph at lines 128--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--137
+Underfull \hbox (badness 10000) in paragraph at lines 132--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 150--154
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--161
+Underfull \hbox (badness 10000) in paragraph at lines 156--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--168
+Underfull \hbox (badness 10000) in paragraph at lines 163--169
 
  []
 
 [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 184--186
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
 [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 190--193
+Underfull \hbox (badness 10000) in paragraph at lines 191--194
 
  []
 
 
-Overfull \hbox (19.08406pt too wide) in paragraph at lines 194--196
+Overfull \hbox (19.08406pt too wide) in paragraph at lines 195--197
 \OT1/cmr/m/n/10 By sub-mit-ting this re-port for as-sess-ment as the exam com-p
 o-nent of COMP4181/9181
  []
@@ -181,7 +176,7 @@ o-nent of COMP4181/9181
 Here is how much of TeX's memory you used:
  275 strings out of 493921
  3467 string characters out of 3144857
- 55031 words of memory out of 3000000
+ 54031 words of memory out of 3000000
  3637 multiletter control sequences out of 15000+200000
  8577 words of font info for 31 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -198,7 +193,7 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on hairy-adventure.pdf (10 pages, 166042 bytes).
+Output written on hairy-adventure.pdf (10 pages, 166181 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
