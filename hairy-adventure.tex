@@ -1,4 +1,4 @@
-\documentclass[9pt,twocolumn]{article}
+\documentclass[9pt]{article}
 \title{Exam report for COMP4181/9181 (13s2)}
 \author{z3416506}
 \date{}
@@ -8,6 +8,14 @@
 
 \section*{Critical assessment of Paper 1.}
 \subsection*{Problem that the paper tries to address}
+Jan Bracker and Andy Gill's technical paper, {\it Sunroof: A Monadic DSL to Generate JavaScript}, attempt to generate JavaScript programs through the domain specific language, {\it Sunroof}, which is embedded in Haskell.
+They discuss the usefulness of JavaScript (e.g. graphical canvases, event handling, and first-class functions), but also note that it lacks some desirable features, such as Haskell's static typing.\\
+
+Bracker and Gill propose Sunroof as an alternative to JavaScript, since Sunroof is able to introduce many of Haskell's features to programmers that JavaScript is unable to natively facilitate (e.g. a threading model, a static type checker, etc.).
+As expected, Sunroof has a foreign-function interface, which allows the extension of Sunroof's interface possible.\\
+
+Bracker and Gill implement Sunroof through a monad similar to the \verb/IO/ monad found in Haskell, but uses an extra argument to determine which threading model is to be used.
+
 \subsection*{Coverage of related work}
 \subsection*{Originality and technical soundness of the underlying ideas}
 \subsection*{Evaluation of the presented approach}
