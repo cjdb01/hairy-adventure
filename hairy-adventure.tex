@@ -26,13 +26,29 @@ This is not necessarily bad; there are too many to go into great detail of each,
 
 The remaining works do not appear to be directly related to research associated with Sunroof; they are more related to Haskell features used to implement Sunroof.
 Consider `{\it Our example type \verb/JSString/ has a \verb/Monoid/ and an \verb/IsString/ instance that are not provided for other wrappers, e.g. \verb/JSBool/ or \verb/JSNumber/. This approach was first introduced by Svenningsson [29].}'
-Svenningson and Axelsson had done previous research regarding shallow and deep embedding in reference 29, and Bracker and Gill were able to capitalise on this. They provided reference to a highly detailed technical paper written by Svenningsson and Axelsson regarding the topic\footnote{The marker should be aware that the author of this critical analysis didn't have time to properly read this paper, but did read through enough of it to get the gist of what Bracker and Gill were alluding to.}, which encourages further research should the reader wish to learn more about Sunroof's implementation.
+Svenningson and Axelsson had done previous research regarding shallow and deep embedding in reference 29, and Bracker and Gill were able to capitalise on this. They provided reference to a highly detailed technical paper written by Svenningsson and Axelsson regarding the topic\footnote{The author of this critical analysis didn't have time to properly read this paper, but did read through enough of it to get the gist of what Bracker and Gill were alluding to.}, which encourages further research should the reader wish to learn more about Sunroof's implementation.
 
 \subsection*{Originality and technical soundness of the underlying ideas}
-The idea of generating JavaScript through Haskell is not original.
-Bracker and Gill are quick to point out that a direct connection between Haskell and JavaScript is novel; this is true, however, as mentioned in their related work section, {\it Fay} compiles subsets of Haskell, and {\it }
+The idea of generating JavaScript through Haskell is not original, as it is mentioned in the Related Work section that {\it Fay} compiles subsets of Haskell to JavaScript.
+Bracker and Gill are quick to point out that a direct connection between Haskell and JavaScript is most likely novel.
+Furthermore, it is their belief that Sunroof is the only EDSL that generates JavaScript inside Haskell that is type-safe.
+No evidence has been presented to suggest otherwise at the time of writing this analysis.\\
+
+This doesn't make the process novel.
+{\it Accelerate} generates {\it CUDA} in a similar manner[1], and thus it is important for this paper to be augmented with some sort of technical background.
+This is somewhat lacking, since a Sunroof codebase isn't supplied; only a series of code snippets have been made available in the paper itself.\\
+
+There are two completely original aspects to this paper\footnote{To the author of this critical analysis' knowledge.}:
+\begin{itemize}
+\item Sunroof implements threading models for JavaScript, and,
+\item The Sunroof server `{\it provides the infrastructure to communicate with the currently calling website through the Kansas cornet [16] push mechanism [20].}'
+\end{itemize}
 
 \subsection*{Evaluation of the presented approach}
+
+\section*{References}
+\noindent
+1.\hspace{5mm}AccelerateHS, https://github.com/AccelerateHS/accelerate
 
 \noindent
 {\bf End of critical assessment of Paper 1.}
