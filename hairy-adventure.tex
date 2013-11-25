@@ -80,7 +80,16 @@ Perhaps if the paper (or a subsequent paper published by Bracker and Gill) was a
 \subsection*{Problem that the paper tries to address}
 {\it Mio: A High-Performance Multicore IO Manager for GHC}, written by Andreas Voellmy, Junchang Wangm, Paul Hudak, and Kazuhiko Yamamoto, addresses a very real concurrency problem.
 They argue that Haskell threads are key to high-performance, concurrent programs.
-Although GHC provides support for Haskell threads, its runtime system doesn't natively scale well on multicore processors, and so network applications that try to take advantage of lightweight Haskell threads will perform poorly.
+
+The paper motivates this problem very well, and explain in great detail the reasons why this problem is one of great concern in the opening paragraphs.
+It is explained that web servers perform a lot of IO operations, which are extremely slow, and non-IO requests should still be able to be processed if available.
+They then contrast Haskell's lightweight threads against an operating system's native threads.
+The motivation also highlights that lightweight threads will promote a simple threaded model over a complex event-driven model.
+
+The motivation concludes by stating that although GHC provides support for Haskell threads, its runtime system doesn't scale well on multicore processors
+This means that network applications trying to take advantage of lightweight Haskell threads will perform poorly.\\
+
+\noindent
 The problems that this paper address are:
 
 \begin{itemize}
@@ -89,11 +98,7 @@ The problems that this paper address are:
 \end{itemize}
 
 \noindent
-The authors motivate this problem very well, and explain in great detail the reasons why this problem is one of great concern in the opening paragraphs.
-While reading the introduction, it is difficult not to consider it to be an extension of the abstract, since the introduction goes beyond its definition and summarises the remainder of the paper.\\
-
-\noindent
-The paper identifies three major problems with the current system:
+The paper identifies three fundamental problems with the current system and resolves each problem in turn:
 
 \begin{itemize}
 \item The GHC IO manager uses a single MVar to manage the callback table.
@@ -102,7 +107,7 @@ The paper identifies three major problems with the current system:
 \end{itemize}
 
 The problems are not presented together at the start, but sequentially, as the preceding problem is solved; it is almost like the system is evolving.
-The authors take great care to resolve all three problems, ensuring that there is complete closure for each.
+The authors take great care to resolve all three problems, ensuring that there is complete closure for each.\\
 
 \subsection*{Coverage of related work}
 Many of this paper's references are not related to similar works.
@@ -136,11 +141,11 @@ For example, in {\it Problem that the paper tries to address}, we learned that t
 This analysis in particular is accompanied by three charts:
 \begin{itemize}
 \item one plotting the throughput of the \verb/SimpleServer/ as it currently is, and as it evolves over time;
-\item one describing a single epoch of activity\footnote{An epoch is a one step.}; and,
+\item one describing a single epoch of activity\footnote{An epoch is a one cycle in a series of events.}; and,
 \item one showing several epochs
 \end{itemize}
 
-This is incredibly useful, as it shows the problem close up, but then moves out to show the bigger problem; this illustrates that the problem.\\
+This is incredibly useful, as it shows the problem close up, but then moves out to show the bigger problem; this illustrates that the problem is not a localised issue over a small period of time, but a global issue.\\
 
 Each problem is then resolved directly after the problem has been identified.
 Continuing with our concurrent callback tables example, the problem is solved as discussed in the first part of this analysis; the results are provided in the original throughput chart (this is one evolution), and another chart that shows multiple epochs.
