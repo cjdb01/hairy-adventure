@@ -67,12 +67,27 @@ Perhaps if the paper (or a subsequent paper published by Bracker and Gill) was a
 \noindent
 1.\hspace{5mm}AccelerateHS, https://github.com/AccelerateHS/accelerate\\
 
-\vspace{25mm}
 \noindent
 {\bf End of critical assessment of Paper 1.}
 \clearpage
+
 \section*{Critical assessment of Paper 2.}
 \subsection*{Problem that the paper tries to address}
+{\it Mio: A High-Performance Multicore IO Manager for GHC}, written by Andreas Voellmy, Junchang Wangm, Paul Hudak, and Kazuhiko Yamamoto, addresses a very real concurrency problem.
+They argue that Haskell threads are key to high-performance, concurrent programs.
+They suggest that naive implementations are likely to use native threads, which involve expensive context switching.
+Haskell threads are lightweight, and do not require the operating system to perform any expensive context switching.
+The authors state that Haskell threads are likely to promote simple threaded models, and discourage event-driven programming.
+They convincingly present the idea that event-driven programs are logically complex, and that network server logic is better understood as a single execution thread.\\
+
+Although GHC provides support for Haskell threads, its runtime system doesn't natively scale well on multicore processors, and so network applications that try to take advantage of lightweight Haskell threads will perform poorly.
+The problems that this paper address are:
+
+\begin{itemize}
+\item Identifying why GHC's RTS performance doesn't natively scale on multicore processors.
+\item 
+\end{itemize}
+
 \subsection*{Coverage of related work}
 \subsection*{Originality and technical soundness of the underlying ideas}
 \subsection*{Evaluation of the presented approach}
